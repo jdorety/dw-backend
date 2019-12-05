@@ -21,11 +21,11 @@ for (let [environment, monstList] of monsters) {
     return {
       name: monst.name,
       environment: environments[environment],
-      armor: parseInt(monst.armor),
+      armor: monst.armor,
       attack: monst.attack,
       damage: monst.damage,
       description: monst.description,
-      hp: parseInt(monst.hp),
+      hp: monst.hp,
       instinct: monst.instinct,
       moves: monst.moves.join("\n"),
       page: monst.page,
