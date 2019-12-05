@@ -1,10 +1,10 @@
 exports.up = function(knex) {
-  return knex.schema.createTable("monster_tags", tbl => {
+  return knex.schema.createTable("m_tags", tbl => {
     tbl.increments();
     tbl.string("tag_name");
   });
 };
 
 exports.down = function(knex) {
-  return knex.schema.dropTableIfExists("monster_tags");
+  return knex.schema.dropTableIfExists("m_tags");
 };
